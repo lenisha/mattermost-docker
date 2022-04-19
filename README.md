@@ -11,3 +11,12 @@ PRs are welcome, refer to our [contributing guide](https://developers.mattermost
 ## Upgrading from `mattermost-docker`
 
 This repository replaces the [deprecated mattermost-docker repository](https://github.com/mattermost/mattermost-docker>). For an in-depth guide to upgrading, please refer to [this document](https://github.com/mattermost/docker/blob/main/scripts/UPGRADE.md).
+
+
+# Azure Deployment
+
+Import Mattermost image to ACR
+
+```
+az acr import -n clcontainers --source  docker.io/mattermost/mattermost-enterprise-edition:6.3 --image mattermost/mattermost-enterprise-edition:6.3
+```
